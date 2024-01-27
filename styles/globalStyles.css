@@ -1,0 +1,12 @@
+:root {
+  --font-size-large: 32px;
+  --font-size-default: 16px;
+  --font-size-small: 12px;
+  --font-size-medium: 24px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
