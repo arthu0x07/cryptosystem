@@ -12,6 +12,56 @@
     <link rel="stylesheet" href="styles/media/desktop.css" />
   </head>
   <body>
+    <div class="container-wrapper">
+      <section class="container-alura-logo">
+        <div class="container-image">
+          <img
+            src="assets/icons/logo.png"
+            alt="A imagem de logo da Alura em tons azuis e brancos"
+          />
+        </div>
+      </section>
+
+      <main class="container-main-application">
+        <section class="container-message-input">
+          <div class="container-message-input-content">
+            <section class="container-message-value">
+              <p contenteditable="true" class="message-value-content">Digite seu texto</p>
+            </section>
+
+            <section class="container-actions-and-alert">
+              <div class="container-alert-input-format">
+                <img
+                  src="assets/icons/exclamation-circle.svg"
+                  alt='Uma letra "I" indicando uma informação'
+                />
+                <p>Apenas letras minúsculas e sem acento.</p>
+              </div>
+
+              <div class="container-buttons">
+                <button class="button-shape button-encrypt">Criptografar</button>
+                <button class="button-shape button-decrypt">Descriptografar</button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="container-message-output">
+          <section class="container-message-output-content">
+            <div class="container-no-message-found">
+              <img
+                src="assets/images/searching-message.svg"
+                alt="Uma imagem de uma pessoa de joelhos usando uma lupa para olhar um diamante"
+              />
+              <h2>Nenhuma mensagem encontrada</h2>
+              <p>
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
     <script src="scripts/main.js"></script>
   </body>
 </html>
