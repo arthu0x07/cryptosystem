@@ -1,0 +1,46 @@
+@media (min-width: 768px) and (max-width: 1024px), (max-width: 768px) {
+  html {
+    font-size: 55.2%;
+  }
+
+  .container-wrapper {
+    flex-direction: column;
+
+    gap: unset;
+    max-height: unset;
+    height: unset;
+  }
+
+  .container-alura-logo {
+    margin-bottom: 11.6rem;
+  }
+
+  .container-main-application {
+    flex-direction: column;
+  }
+
+  .container-message-input {
+    min-height: calc(70rem - 11.6rem / 2rem);
+  }
+
+  .container-message-input-content {
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+
+  .message-value-content {
+    max-width: unset;
+  }
+
+  .container-message-output-content {
+    padding: 3.2rem;
+  }
+
+  .container-message-output {
+    max-width: unset;
+  }
+
+  .container-no-message-found > img {
+    display: none;
+  }
+}
