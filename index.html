@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/globalStyles.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
-    <link rel="stylesheet" href="styles/media/mobile.css" />
-    <link rel="stylesheet" href="styles/media/tablet.css" />
     <link rel="stylesheet" href="styles/media/desktop.css" />
+    <link rel="stylesheet" href="styles/media/tablet.css" />
+    <link rel="stylesheet" href="styles/media/mobile.css" />
   </head>
   <body>
     <div class="container-wrapper">
@@ -26,7 +26,8 @@
         <section class="container-message-input">
           <div class="container-message-input-content">
             <section class="container-message-value">
-              <p contenteditable="true" class="message-value-content">Digite seu texto</p>
+              <textarea spellcheck="false" wrap="hard" type="text" contenteditable="true" placeholder="Digite seu texto" class="message-value-content">
+              </textarea>
             </section>
 
             <section class="container-actions-and-alert">
@@ -39,8 +40,12 @@
               </div>
 
               <div class="container-buttons">
-                <button class="button-shape button-encrypt">Criptografar</button>
-                <button class="button-shape button-decrypt">Descriptografar</button>
+                <button class="button-shape button-encrypt">
+                  Criptografar
+                </button>
+                <button class="button-shape button-decrypt">
+                  Descriptografar
+                </button>
               </div>
             </section>
           </div>
@@ -48,7 +53,7 @@
 
         <section class="container-message-output">
           <section class="container-message-output-content">
-            <div class="container-no-message-found">
+            <div class="container-no-message-found hidden-element">
               <img
                 src="assets/images/searching-message.svg"
                 alt="Uma imagem de uma pessoa de joelhos usando uma lupa para olhar um diamante"
@@ -57,6 +62,18 @@
               <p>
                 Digite um texto que você deseja criptografar ou descriptografar.
               </p>
+            </div>
+
+            <div class="container-decrypt-message">
+              <p class="decrypt-message-value">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci
+                montes, sit et diam risus scelerisque vitae est. Tortor maecenas
+                nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla
+                sit elit. Libero, sodales duis fames id diam feugiat aliquet non
+                egestas.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.
+              </p>
+              <button class="button-shape button-copy">Copiar</button>
             </div>
           </section>
         </section>

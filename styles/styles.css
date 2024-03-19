@@ -54,18 +54,27 @@
 }
 
 .message-value-content {
+  width: 100%;
+  min-height: 300px;
+  max-width: 70rem;
+
   font-size: 3.2rem;
   line-height: 4.8rem;
-  color: #0a3871;
 
+  color: #0a3871;
+  background-color: transparent;
+
+  border: none;
   overflow: scroll;
+
   padding-right: 1rem;
   margin-bottom: 11.6rem;
-  max-height: 300px;
 
-  word-wrap: break-word;
-  word-break: break-all;
-  max-width: 70rem;
+  resize: vertical;
+}
+
+.message-value-content:focus-visible {
+  outline: none;
 }
 
 .container-actions-and-alert {
@@ -146,7 +155,7 @@
   align-items: center;
 
   margin: 0 auto;
-  padding: 0rem 3.2rem;
+  padding: 3.2rem 3.2rem;
 
   border-radius: 32px;
 }
@@ -179,4 +188,38 @@
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
+}
+
+.container-decrypt-message {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.decrypt-message-value {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #0a3871;
+
+  overflow: scroll;
+  padding-right: 1rem;
+  margin-bottom: 11.6rem;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.button-copy {
+  width: 100%;
+  flex-grow: 0;
+
+  background-color: #ffffff;
+  color: #0a3871;
+}
+
+.hidden-element {
+  display: none;
 }
