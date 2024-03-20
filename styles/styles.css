@@ -143,6 +143,8 @@
   border-width: 1px;
   border-color: #0a3871;
   border-style: outset;
+
+  cursor: pointer;
 }
 
 .button-encrypt {
