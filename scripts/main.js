@@ -1,5 +1,6 @@
 import { Encrypt, Decrypt } from "./encrypt.js";
 import { handleCopyMessage } from "./copy.js";
+import { AppearErrorFeedback, HiddenErrorFeedback } from "./feedback.js";
 
 // Events Section
 const ButtonCopy = document.querySelector(".button-copy");
@@ -16,22 +17,11 @@ function ValidateMessage(OriginalMessageValue) {
     const regex = /^[a-z]+$/i;
 
     if (regex.test(OriginalMessageValue)) {
-      document
-        .querySelector(".container-decrypt-message")
-        .classList.remove("hidden-element");
-      document
-        .querySelector(".container-no-message-found")
-        .classList.add("hidden-element");
-
+      AppearErrorFeedback();
       return true;
-    } else {
-      document
-        .querySelector(".container-decrypt-message")
-        .classList.add("hidden-element");
-      document
-        .querySelector(".container-no-message-found")
-        .classList.remove("hidden-element");
     }
+
+    HiddenErrorFeedback();
   }
 }
 
