@@ -1,0 +1,22 @@
+:root {
+  --font-size-large: 32px;
+  --font-size-medium: 24px;
+  --font-size-default: 16px;
+  --font-size-small: 12px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f3f5fc;
+}

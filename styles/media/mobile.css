@@ -1,0 +1,19 @@
+@media (min-width: 0px) and (max-width: 425px), (max-width: 425px) {
+  .container-main-application {
+    gap: 6.4rem;
+  }
+
+  .container-alura-logo {
+    margin-bottom: 8rem;
+  }
+
+  .container-buttons {
+    flex-direction: column;
+  }
+
+  .button-shape {
+    min-width: unset;
+    width: 100%;
+    flex: 1;
+  }
+}

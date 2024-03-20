@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptosystem</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/globalStyles.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/media/desktop.css" />
+    <link rel="stylesheet" href="styles/media/tablet.css" />
+    <link rel="stylesheet" href="styles/media/mobile.css" />
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <section class="container-alura-logo">
+        <div class="container-image">
+          <img
+            src="assets/icons/logo.png"
+            alt="A imagem de logo da Alura em tons azuis e brancos"
+          />
+        </div>
+      </section>
+
+      <main class="container-main-application">
+        <section class="container-message-input">
+          <div class="container-message-input-content">
+            <section class="container-message-value">
+              <textarea
+                spellcheck="false"
+                wrap="hard"
+                type="text"
+                contenteditable="true"
+                placeholder="Digite seu texto"
+                class="message-value-content"
+              ></textarea>
+            </section>
+
+            <section class="container-actions-and-alert">
+              <div class="container-alert-input-format">
+                <img
+                  src="assets/icons/exclamation-circle.svg"
+                  alt='Uma letra "I" indicando uma informação'
+                />
+                <p>Apenas letras minúsculas e sem acento.</p>
+              </div>
+
+              <div class="container-buttons">
+                <button class="button-shape button-encrypt">
+                  Criptografar
+                </button>
+                <button class="button-shape button-decrypt">
+                  Descriptografar
+                </button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="container-message-output">
+          <section class="container-message-output-content">
+            <div class="container-no-message-found">
+              <img
+                src="assets/images/searching-message.svg"
+                alt="Uma imagem de uma pessoa de joelhos usando uma lupa para olhar um diamante"
+              />
+              <h2>Nenhuma mensagem encontrada</h2>
+              <p>
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
+
+            <div class="container-decrypt-message hidden-element">
+              <p class="decrypt-message-value">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                explicabo, assumenda mollitia odio voluptates harum unde
+                deserunt veniam corrupti repudiandae tempore consequatur impedit
+                suscipit quis ea debitis sint ipsa enim.
+              </p>
+              <button class="button-shape button-copy">Copiar</button>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/encrypt.js"></script>
+    <script type="module" src="scripts/copy.js"></script>
+  </body>
+</html>
